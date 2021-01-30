@@ -39,3 +39,23 @@ body{
 .container a:hover{
 	background: #1500ff;
 }
+
+#countUp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#countUp .number {
+  font-size: 160px;
+  font-weight:900;
+  letter-spacing: 20px;
+}
+#countUp .number + .text {
+  margin: 0 0 1rem;
+}
+#countUp .text {
+  font-weight: 300;
+  text-align: center;
+}
