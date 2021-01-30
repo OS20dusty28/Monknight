@@ -33,7 +33,17 @@ ul {
     padding: 0;
     list-style: none;
 }
-
+main .info1{
+	font-family: 'Noto Sans JP', sans-serif;
+	background: #0000ff;
+	color: #fff;
+	font-size: 20px;
+}
+main .info1 a{
+	font-family: 'Noto Sans JP', sans-serif;
+	color: #fff;
+	font-size: 30px;
+}
 main {
     margin-top: 10rem;
     text-align: center;
