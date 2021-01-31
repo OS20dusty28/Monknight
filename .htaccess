@@ -1,15 +1,10 @@
-#mode_rerwrite start here
+RewriteEngine on
 
-RewriteEngine On
+# Remove .html (or htm) from visible URL (permanent redirect)
+RewriteCond %{REQUEST_URI} ^/(.+)\.html?$ [nocase]
+RewriteRule ^ /%1 [L,R=301]
 
-# does not apply to existing directores, meaning that if the folder exists on server then don't change anything and don't run the rule.
-
+# Quietly point back to the HTML file (temporary/undefined redirect):
 RewriteCond %{REQUEST_FILENAME} !-d
-
-#Check for file in directory with .html extension 
-
-RewriteCond %{REQUEST_FILENAME}\.html !-f
-
-#Here we actually show the page that has .html extension
-
-RewriteRule ^(.*)$ $1.html [NC,L]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [END]
