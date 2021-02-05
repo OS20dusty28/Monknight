@@ -1,0 +1,26 @@
+a {
+	display: block;
+	background: #00A9D4;
+	color: #fff;
+	padding: 15px;
+	cursor: pointer;
+	text-decoration: none;
+	width: 320px;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 20px;
+}
+a:hover {
+	background: #00729D;
+}
+.main a {
+	background: #F98909;
+}
+
+.main a:hover {
+	background: #DC6C11;
+}
+p {
+	color: #888;
+	padding: 15px;
+}
