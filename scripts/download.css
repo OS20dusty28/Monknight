@@ -13,12 +13,16 @@ a {
 a:hover {
 	background: #00729D;
 }
-.main a {
+main a {
 	background: #F98909;
 }
 
-.main a:hover {
+main a:hover {
 	background: #DC6C11;
+}
+main a{
+	font-size: 30px;
+	border: 2;
 }
 p {
 	color: #888;

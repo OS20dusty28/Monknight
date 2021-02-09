@@ -44,6 +44,24 @@ main .info1 a{
 	color: #fff;
 	font-size: 30px;
 }
+
+main .download1 a{
+	text-decoration:none;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 3.7rem;
+	color:#fff;
+	background: #4646FF;
+	width:280px;
+	padding: 20px 0;
+	text-align:center;
+	border-radius: 10px;
+	transition: 1s;
+	
+}
+main .download1 a:hover{
+	background: #9090FF;
+	transition: 1s;
+}
 main {
     margin-top: 10rem;
     text-align: center;
@@ -101,6 +119,7 @@ section p {
   transition: 1s;
 
 }
+
 .container-footer .redes-footer .fa-facebook-f:hover{
   background: #41579a;
   color: #fff;
